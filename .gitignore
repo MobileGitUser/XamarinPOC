@@ -2,3 +2,8 @@
 .vs/XamarinPOC/v15/Server/sqlite3/storage.ide-shm
 .vs/XamarinPOC/v15/Server/sqlite3/storage.ide
 .vs/XamarinPOC/v15/Server/sqlite3/db.lock
+XamarinPOC.Android/obj/
+XamarinPOC/obj/
+XamarinPOC/bin/
+XamarinPOC.iOS/obj/
+XamarinPOC.Android/bin/

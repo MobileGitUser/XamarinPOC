@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mvx:MvxContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:mvx="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms" x:Class="XamarinPOC.Pages.MainPage">
+    <StackLayout>
+
+
+        <StackLayout VerticalOptions="StartAndExpand"  Padding="20">
+                <Label Text="Username"  />
+            <Entry x:Name="Entry_Email" Placeholder="username" Text="{Binding EntryEmail}" />
+                <Label Text="Password" />
+            <Entry x:Name="Entry_Password" IsPassword="true" Placeholder="password" Text="{Binding EntryPassword}" />
+            <Button  x:Name="btn_login" Text="Login"  Command="{Binding LoginCommand}" Margin="20"
+                     HeightRequest="50" BackgroundColor="Brown"  TextColor="Black" HorizontalOptions="FillAndExpand"/>
+                <Label x:Name="messageLabel" />
+            </StackLayout>
+
+    </StackLayout>
+</mvx:MvxContentPage>
+
