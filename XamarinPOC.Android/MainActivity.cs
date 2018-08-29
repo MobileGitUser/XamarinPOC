@@ -20,6 +20,11 @@ namespace XamarinPOC.Droid
             startup.Start();
             InitializeForms(bundle);
         }
+
+        public override void OnBackPressed()
+        {
+            base.OnBackPressed();
+        }
     }
 }
 

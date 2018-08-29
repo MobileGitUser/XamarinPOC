@@ -9,5 +9,8 @@ namespace XamarinPOC.View
     {
         public DashboardViewModel()
         { }
+       
     }
+
+
 }

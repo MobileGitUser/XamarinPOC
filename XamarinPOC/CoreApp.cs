@@ -16,5 +16,7 @@ namespace XamarinPOC
             //Starting point of app
             RegisterAppStart<ViewModels.MainViewModel>();
         }
+
+
     }
 }

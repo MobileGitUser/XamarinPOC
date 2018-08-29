@@ -3,9 +3,7 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to DashBoard page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Grid x:Name="gridLayout"></Grid>
         </StackLayout>
     </ContentPage.Content>
 </mvx:MvxContentPage>
