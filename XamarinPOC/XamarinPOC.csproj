@@ -24,4 +24,8 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\Tile1\" />
+    <Folder Include="Pages\Tile2\" />
+  </ItemGroup>
 </Project>
