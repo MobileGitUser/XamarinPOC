@@ -48,7 +48,7 @@ namespace XamarinPOC.Pages
                     }
                     var product = productArrayList[productIndex];
                     productIndex += 1;
-                    var label = new Button
+                    var button = new Button
                     {
                         Text = product,
                         VerticalOptions = LayoutOptions.Center,
@@ -58,15 +58,38 @@ namespace XamarinPOC.Pages
                         FontSize = 10,
                         FontAttributes = FontAttributes.None,
                         WidthRequest = 100,
-                        HeightRequest = 100
-                      
+                        HeightRequest = 100,
+
                     };
-                    label.GestureRecognizers.Add(tap);
-                    gridLayout.Children.Add(label, columnIndex, rowIndex);
+                    button.Clicked += async (sender, args) =>
+                    {
+                        //await Navigation.PushAsync(new HelloXamlPage());
+                         this.navigateToNextPage(sender,null);
+                    };
+                    gridLayout.Children.Add(button, columnIndex, rowIndex);
                 }
             }
             //gridLayout.GestureRecognizers.Add(tap);
 
+        }
+
+        private void navigateToNextPage(object sender, EventArgs e)
+        {
+            switch ((sender as Button).Text)
+            {
+                case "Temp converter":
+                    //Do something
+                    navigateToFirstTile(null);
+                    break;
+                case "Bp Converter":
+                    //Do something
+                   break;
+            }
+        }
+
+        private async void navigateToFirstTile(EventArgs e)
+        {
+            //await Navigation.PushAsync(new SecondPage());
         }
 
         protected override bool OnBackButtonPressed()
