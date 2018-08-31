@@ -3,7 +3,7 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Grid x:Name="gridLayout"></Grid>
+            <Grid x:Name="gridLayout" RowSpacing="20"></Grid>
         </StackLayout>
     </ContentPage.Content>
 </mvx:MvxContentPage>

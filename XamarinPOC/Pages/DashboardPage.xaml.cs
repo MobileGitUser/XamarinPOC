@@ -16,8 +16,10 @@ namespace XamarinPOC.Pages
 	public partial class DashboardPage : MvxContentPage
     {
         private List<String> productArrayList;
+        private String[] listItems = {   "Abin"," Arjun",  "Archana", "Basheer", "Chandrika",
+            "Ravi", "Ruby", "Saket",  "Sibinesh", "Sreejith", "Sundeep", "Vijay" };
 
-        private String[] listItems = {"Temp converter","Bp Converter","Glucose converter", "Distance converter", "Volume Converter" };
+        //private String[] listItems = {"Temp converter","Bp Converter","Glucose converter", "Distance converter", "Volume Converter" };
 
         public DashboardPage()
 		{
@@ -38,7 +40,7 @@ namespace XamarinPOC.Pages
             };
 
             var productIndex = 0;
-            for (int rowIndex = 0; rowIndex < 2; rowIndex++)
+            for (int rowIndex = 0; rowIndex < 4; rowIndex++)
             {
                 for (int columnIndex = 0; columnIndex < 3; columnIndex++)
                 {
@@ -55,7 +57,7 @@ namespace XamarinPOC.Pages
                         HorizontalOptions = LayoutOptions.Center,
                         TextColor = Color.White,
                         BackgroundColor= Color.Brown,
-                        FontSize = 10,
+                        FontSize = 12,
                         FontAttributes = FontAttributes.None,
                         WidthRequest = 100,
                         HeightRequest = 100,
@@ -75,13 +77,15 @@ namespace XamarinPOC.Pages
 
         private void navigateToNextPage(object sender, EventArgs e)
         {
+            //DisplayAlert("", "Item selected", "ok");
+
             switch ((sender as Button).Text)
             {
-                case "Temp converter":
+                case "Abin":
                     //Do something
                     navigateToFirstTile(null);
                     break;
-                case "Bp Converter":
+                case "Arjun":
                     //Do something
                    break;
             }
