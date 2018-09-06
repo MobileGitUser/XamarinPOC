@@ -1,0 +1,14 @@
+﻿<mvx:MvxContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+                    xmlns:mvx="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+                    xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+                    x:Class="XamarinPOC.Pages.Vijaytile.LmsDashPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+
+            <microcharts:ChartView x:Name="Chart4"  Margin="10,0,0,0" 
+                                   HorizontalOptions="FillAndExpand" HeightRequest="200"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</mvx:MvxContentPage>

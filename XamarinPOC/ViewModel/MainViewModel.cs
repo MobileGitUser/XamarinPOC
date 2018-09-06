@@ -8,6 +8,7 @@ using XamarinPOC.Models;
 using System.ComponentModel;
 using System.Diagnostics;
 using XamarinPOC.Pages;
+using XamarinPOC.Pages.Vijaytile;
 
 namespace XamarinPOC.ViewModels
 {
@@ -17,7 +18,6 @@ namespace XamarinPOC.ViewModels
         public event PropertyChangedEventHandler PropertyChanged = delegate { };
         public MainViewModel()
         {
-         
         }
 
 
@@ -56,8 +56,10 @@ namespace XamarinPOC.ViewModels
 
         public override void Start()
         {
+
             _loginCommand = new MvxCommand(() => StartLogin());
             base.Start();
+
         }
 
         private void StartLogin()
@@ -82,7 +84,7 @@ namespace XamarinPOC.ViewModels
             if (EntryEmail.Contains("@gmail.com"))
             {
                 //App.Current.MainPage.DisplayAlert("Login", "Successfully Login", "Ok
-                await App.Current.MainPage.Navigation.PushAsync(new DashboardPage());
+                await App.Current.MainPage.Navigation.PushAsync(new LmsDashPage());
 
 
             }
@@ -91,6 +93,13 @@ namespace XamarinPOC.ViewModels
                 //DisplayAlertPrompt();
                 App.Current.MainPage.DisplayAlert("Login", "Enter user name with @gmail.com", "Ok");
             }
+        }
+
+
+        private async void dummyNavigation()
+        {
+            await App.Current.MainPage.Navigation.PushAsync(new LmsDashPage());
+
         }
 
         public override Task Initialize()

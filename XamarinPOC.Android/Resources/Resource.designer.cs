@@ -26,6 +26,7 @@ namespace XamarinPOC.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Microcharts.Droid.Resource.String.library_name = global::XamarinPOC.Droid.Resource.String.library_name;
 			global::MvvmCross.Resource.Attribute.MvxBind = global::XamarinPOC.Droid.Resource.Attribute.MvxBind;
 			global::MvvmCross.Resource.Attribute.MvxDropDownItemTemplate = global::XamarinPOC.Droid.Resource.Attribute.MvxDropDownItemTemplate;
 			global::MvvmCross.Resource.Attribute.MvxGroupItemTemplate = global::XamarinPOC.Droid.Resource.Attribute.MvxGroupItemTemplate;
@@ -8032,6 +8033,9 @@ namespace XamarinPOC.Droid
 			
 			// aapt resource value: 0x7f0b003c
 			public const int fab_scroll_shrink_grow_autohide_behavior = 2131427388;
+			
+			// aapt resource value: 0x7f0b003e
+			public const int library_name = 2131427390;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int mr_button_content_description = 2131427328;
